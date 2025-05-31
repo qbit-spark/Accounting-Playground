@@ -21,5 +21,5 @@ public class Project {
     private LocalDate startDate;
     private LocalDate endDate;
     private ProjectStatus status; // ACTIVE, COMPLETED, ON_HOLD
-    private Long companyId;
+    private UUID companyId;
 }

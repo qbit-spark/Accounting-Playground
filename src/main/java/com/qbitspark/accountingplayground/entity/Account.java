@@ -17,6 +17,6 @@ public class Account {
     private String accountNumber; // "5000"
     private String accountName;   // "Materials"
     private AccountType type;     // ASSET, LIABILITY, EQUITY, REVENUE, EXPENSE
-    private Long companyId;
+    private UUID companyId;
     private Boolean isActive;
 }

@@ -14,8 +14,8 @@ public class JournalEntry {
     private LocalDate transactionDate;
     private String description;    // "Bought cement for Downtown project"
     private String referenceNumber;
-    private Long projectId;        // Which project this relates to
-    private Long companyId;
+    private UUID projectId;        // Which project this relates to
+    private UUID companyId;
 
     @OneToMany
     private List<JournalEntryLine> lines; // Debit and Credit lines

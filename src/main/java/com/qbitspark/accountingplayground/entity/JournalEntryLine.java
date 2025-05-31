@@ -13,8 +13,8 @@ public class JournalEntryLine {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
-    private Long accountId;        // Which account (Materials, Cash, etc.)
+    private UUID accountId;        // Which account (Materials, Cash, etc.)
     private BigDecimal debitAmount;
     private BigDecimal creditAmount;
-    private Long journalEntryId;
+    private UUID journalEntryId;
 }
