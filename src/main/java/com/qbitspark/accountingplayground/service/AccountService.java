@@ -18,7 +18,7 @@ import java.util.UUID;
 public class AccountService {
 
     @Autowired
-    private AccountRepository accountRepository;
+    AccountRepository accountRepository;
 
     @Autowired
     private JournalEntryLineRepository journalEntryLineRepository;
