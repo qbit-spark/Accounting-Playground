@@ -20,11 +20,10 @@ public class JournalEntry {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     private LocalDate transactionDate;
-    private String description;    // "Bought cement for Downtown project"
+    private String description;
     private String referenceNumber;
-    private UUID projectId;        // Which project this relates to
-    private UUID companyId;
 
-    @OneToMany
-    private List<JournalEntryLine> lines; // Debit and Credit lines
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "journalEntryId")  // This tells JPA how to link them
+    private List<JournalEntryLine> lines;
 }

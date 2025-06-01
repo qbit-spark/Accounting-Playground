@@ -21,8 +21,8 @@ public class JournalEntryLine {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
-    private UUID accountId;        // Which account (Materials, Cash, etc.)
+    private UUID accountId;
     private BigDecimal debitAmount;
     private BigDecimal creditAmount;
-    private UUID journalEntryId;
+    private UUID journalEntryId;  // Keep this for reference
 }
